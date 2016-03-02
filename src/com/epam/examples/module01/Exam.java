@@ -3,7 +3,7 @@ package com.epam.examples.module01;
 /**
  * Created by Vsevolod on 28/02/16.
  */
-public abstract class Exem {
+public interface Exam {
 
-    public abstract  void run();
+   void run();
 }

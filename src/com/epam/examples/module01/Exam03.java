@@ -3,17 +3,17 @@ package com.epam.examples.module01;
 /**
  * Created by Vsevolod on 28/02/16.
  */
-public final class Exem03 extends Exem {
+public final class Exam03 implements Exam {
 
     private double[] array;
 
     private double max;
 
-    public Exem03() {
+    public Exam03() {
         this(0.0, 23.0, 3.14, 18, 54, 0.11);
     }
 
-    public Exem03(double... array) {
+    public Exam03(double... array) {
         this.array = array;
     }
 

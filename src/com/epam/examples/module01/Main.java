@@ -5,16 +5,19 @@ package com.epam.examples.module01;
  */
 public class Main {
     public static void main(String[] args) {
-        Exem exemple = new Exem01();
-        exemple.run();
+        Exam example = new Exam01();
+        example.run();
 
-        exemple = new Exem02();
-        exemple.run();
+        example = new Exam02();
+        example.run();
 
-        exemple = new Exem03();
-        exemple.run();
+        example = new Exam03();
+        example.run();
 
-        exemple = new Exem04();
-        exemple.run();
+        example = new Exam04();
+        example.run();
+
+        example = new Exam05();
+        example.run();
     }
 }

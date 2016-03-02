@@ -3,15 +3,15 @@ package com.epam.examples.module01;
 /**
  * Created by Vsevolod on 28/02/16.
  */
-public final class Exem01 extends Exem {
+public final class Exam01 implements Exam {
 
     private final double E;
 
-    public Exem01() {
+    public Exam01() {
         this(1.0E-2);
     }
 
-    public Exem01(double e) {
+    public Exam01(double e) {
         E = e;
     }
 

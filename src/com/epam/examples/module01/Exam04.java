@@ -3,14 +3,14 @@ package com.epam.examples.module01;
 /**
  * Created by Vsevolod on 29/02/16.
  */
-public class Exem04 extends Exem {
+public final class Exam04 implements Exam {
 
     private final short lines = 5;
     private final short columns = 6;
 
     private byte [][] array;
 
-    public Exem04() {
+    public Exam04() {
         array = new byte[lines][columns];
     }
 
