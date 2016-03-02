@@ -33,7 +33,17 @@ public final class Exam05 implements Exam {
         note.view();
     }
 
+    /**
+     * Notepad - это приватный класс реализующий логику блокнота
+     */
+
+
+
     private final class Notepad {
+
+        /**
+         * Data - приватный класс является пользовательским типом данных для хранения записей
+         */
 
         private final class Data {
 
@@ -59,9 +69,20 @@ public final class Exam05 implements Exam {
             records = new ArrayList<>();
         }
 
+        /**
+         * Функция add - создаёт новую запись
+         * @param str - добавляемая строка
+         */
+
+
         public void add(String str){
             records.add(new Data(str));
         }
+
+        /**
+         * Функция delete - удаляет выбранную запись
+         * @param position - номер записи
+         */
 
         public void delete(int position){
             if((position < records.size()) && (position >= 0))
@@ -70,6 +91,12 @@ public final class Exam05 implements Exam {
             System.err.println("Delete: record not fond");
         }
 
+        /**
+         * Функция edit - заменяет содержание записи новой строкой
+         * @param position - номер записи
+         * @param str - строка с изменённой записью
+         */
+
         public void edit(int position, String str) {
             if((position < records.size()) && (position >= 0))
                 records.get(position).setRecord(str);
@@ -77,6 +104,9 @@ public final class Exam05 implements Exam {
                 System.err.println("Edit: record not fond");
         }
 
+        /**
+         * Функция view - отображает все записи
+         */
         public void view() {
             it = records.listIterator();
 
